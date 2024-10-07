@@ -24,6 +24,8 @@
             color: #f9c74f;
         }
         nav {
+            display: flex;
+            justify-content: center;
             margin: 20px 0;
         }
         nav a {
@@ -33,13 +35,15 @@
             padding: 10px 15px;
             background: #333;
             border-radius: 5px;
-            transition: background 0.3s;
+            transition: background 0.3s, transform 0.3s;
         }
         nav a:hover {
             background: #444;
+            transform: scale(1.05);
         }
         .container {
             padding: 20px;
+            text-align: center;
         }
         .server {
             background: #333;
@@ -91,6 +95,46 @@
             height: auto;
             border-radius: 5px;
         }
+        iframe {
+            width: 100%;
+            height: 315px;
+            border-radius: 5px;
+        }
+        /* Iniciar Sesión */
+        .login-section {
+            margin-top: 30px;
+            background: #444;
+            padding: 20px;
+            border-radius: 5px;
+        }
+        .login-section a {
+            color: #f9c74f;
+            text-decoration: none;
+            background: #c30f0f;
+            padding: 10px 20px;
+            border-radius: 5px;
+            transition: background 0.3s;
+        }
+        .login-section a:hover {
+            background: #d41e1e;
+        }
+        .social-media {
+            margin-top: 30px;
+            background: #333;
+            padding: 20px;
+            border-radius: 5px;
+        }
+        .social-media a {
+            color: #f9c74f;
+            text-decoration: none;
+            background: #c30f0f;
+            padding: 10px 20px;
+            border-radius: 5px;
+            transition: background 0.3s;
+        }
+        .social-media a:hover {
+            background: #d41e1e;
+        }
     </style>
 </head>
 <body>
@@ -132,7 +176,12 @@
     <section id="discord-alarm" class="server">
         <h2>Alarma de Raid en Discord</h2>
         <p>¡Recibe una alarma en Discord cuando te "raidean"! No te pierdas la acción, mantente alerta y preparado.</p>
-        <img src="https://example.com/discord-alarm-image.jpg" alt="Alarma de Discord" />
+        <iframe src="https://www.youtube.com/embed/P5OQ103spK8?si=O-g4M1whOk7tJ3TQ" frameborder="0" allowfullscreen></iframe>
+    </section>
+
+    <section id="tiktok" class="server">
+        <h2>¡Mira nuestro TikTok!</h2>
+        <iframe src="https://www.tiktok.com/embed/v2/ZGdJXENd2?autoplay=0" frameborder="0" allowfullscreen></iframe>
     </section>
 
     <section id="calculator">
@@ -149,12 +198,23 @@
         <div id="calculator-result"></div>
     </section>
 
+    <section id="login" class="login-section">
+        <h2>Iniciar Sesión</h2>
+        <p>Conéctate con Discord para acceder a funciones adicionales y personalizadas en el servidor.</p>
+        <a href="https://discord.com/oauth2/authorize?client_id=YOUR_CLIENT_ID&redirect_uri=YOUR_REDIRECT_URI&response_type=code&scope=identify">Iniciar sesión con Discord</a>
+    </section>
+
     <section id="contact">
         <h2>Contacto</h2>
         <p>Únete a nuestro Discord para más información y para hablar con otros jugadores:</p>
         <a href="https://discord.gg/tu-enlace" target="_blank">Únete al Discord</a>
         <p>¿Quieres VIP o Elite? Conoce nuestras opciones en Patreon:</p>
         <a href="https://patreon.com/tu-enlace" target="_blank">Visita nuestro Patreon</a>
+    </section>
+
+    <section class="social-media">
+        <h2>¡Síguenos en TikTok!</h2>
+        <a href="https://www.tiktok.com/@esp.tiesosrce?_t=8qLTwLWu1hI&_r=1" target="_blank">Ver perfil de TikTok</a>
     </section>
 
     <section id="policies">
@@ -172,24 +232,5 @@
     // JavaScript para el Craft Calculator
     const resources = {
         satchel: { sulfur: 100, cloth: 20, explosive: 10 },
-        rocket: { sulfur: 200, explosive: 50, metal: 50 },
-        grenade: { sulfur: 30, explosive: 5, metal: 10 },
-        c4: { sulfur: 300, explosive: 10, metal: 10, cloth: 5 }
-    };
-
-    document.getElementById('calculate-button').addEventListener('click', () => {
-        const item = document.getElementById('item').value;
-        const quantity = parseInt(document.getElementById('quantity').value);
-        const cost = resources[item];
-        let result = `Para ${quantity} ${item} necesitas:\n`;
+        rocket
         
-        for (const resource in cost) {
-            result += `${cost[resource] * quantity} ${resource}\n`;
-        }
-
-        document.getElementById('calculator-result').innerText = result;
-    });
-</script>
-
-</body>
-</html>
