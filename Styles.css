@@ -1,59 +1,50 @@
+/* styles.css */
 body {
-    font-family: 'Russo One', sans-serif;
+    font-family: 'Arial', sans-serif;
+    background-color: #f0f0f0;
     margin: 0;
     padding: 0;
-    background-color: #1b1b1b;
-    color: #f2f2f2;
-    line-height: 1.6;
 }
+
 header {
-    background: #c30f0f;
-    padding: 20px;
     text-align: center;
-}
-h1 {
-    margin: 0;
-    color: #f9c74f;
-}
-nav {
-    margin: 20px 0;
-}
-nav a {
-    color: #f9c74f;
-    margin: 0 15px;
-    text-decoration: none;
-    padding: 10px 15px;
-    background: #333;
-    border-radius: 5px;
-    transition: background 0.3s;
-}
-nav a:hover {
-    background: #444;
-}
-.container {
     padding: 20px;
+    background-color: #ff4c4c;
+    color: white;
 }
-.server {
-    background: #333;
-    padding: 15px;
-    margin: 10px 0;
+
+img.logo {
+    width: 150px;
+    height: auto;
+}
+
+nav {
+    margin: 20px;
+}
+
+nav a {
+    margin: 15px;
+    padding: 10px 20px;
+    background-color: #333;
+    color: white;
+    text-decoration: none;
     border-radius: 5px;
 }
+
+section {
+    margin: 20px;
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+h1, h2, h3 {
+    color: #333;
+}
+
 footer {
     text-align: center;
     padding: 10px;
-    background: #333;
-}
-h2 {
-    color: #f9c74f;
-}
-#calculator {
-    background: #333;
-    padding: 20px;
-    margin: 20px 0;
-    border-radius: 5px;
-}
-select, input[type="number"] {
-    padding: 10px;
-    margin: 10
-    
+    background-color: #333;
+
