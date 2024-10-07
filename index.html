@@ -8,7 +8,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap" rel="stylesheet">
-    <script src="script.js" defer></script> <!-- Enlazando el script de JavaScript -->
+    <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet">
+    <script src="script.js" defer></script>
 </head>
 <body>
     <header>
@@ -18,8 +19,7 @@
                 <li><a href="#server1">Servidor x100</a></li>
                 <li><a href="#server2">Servidor x2</a></li>
                 <li><a href="#alarma">Alarma Discord</a></li>
-                <li><a href="#minijuego">Mini-Juego</a></li>
-                <li><a href="#calculator">Raid Calculator</a></li>
+                <li><a href="#calculator">Craft Calculator</a></li>
                 <li><a href="#contact">Contacto</a></li>
                 <li><a href="#politicas">Políticas</a></li>
             </ul>
@@ -28,7 +28,7 @@
     
     <section id="hero">
         <h2>¡Aventura, Acción y Diversión!</h2>
-        <img src="https://media.giphy.com/media/l0MYyH02g40shSuK0/giphy.gif" alt="Rust Game" class="hero-image">
+        <img src="https://images.unsplash.com/photo-1585122131052-b3c02b6bcbb6?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MXwyMDg0MjR8MHwxfGFsbHwxfHx8fHx8fHwxNjA3MTE4NjUw&ixlib=rb-1.2.1&q=80&w=1080" alt="Rust Game" class="hero-image">
     </section>
     
     <section id="server1">
@@ -39,6 +39,7 @@
             <li>Eventos automáticos con cajas sorpresas</li>
             <li>Diviértete sin perder tiempo</li>
         </ul>
+        <img src="https://rust.game/assets/images/servers-x100.jpg" alt="Servidor x100" class="server-image">
     </section>
     
     <section id="server2">
@@ -49,41 +50,32 @@
             <li>Eventos de cajas y recompensas</li>
             <li>Construye tu base y defiéndela</li>
         </ul>
+        <img src="https://rust.game/assets/images/servers-x2.jpg" alt="Servidor x2" class="server-image">
     </section>
     
     <section id="alarma">
         <h2>Alarma de Raid en Discord</h2>
         <p>¡Recibe una alarma en Discord cuando te "raidean"! No te pierdas la acción, mantente alerta y preparado.</p>
         <iframe width="560" height="315" src="https://www.youtube.com/embed/P5OQ103spK8" title="Alarma de Raid" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-    </section>
-
-    <section id="minijuego">
-        <h2>Mini-Juego: Aventura en Rust</h2>
-        <p>¡Intenta recolectar el máximo de recursos posible en 30 segundos!</p>
-        <div id="game-container">
-            <p>Recursos recolectados: <span id="score">0</span></p>
-            <button id="collect-button" class="button">Recolectar Recursos</button>
-            <p id="game-message"></p>
-            <button id="start-button" class="button">Iniciar Juego</button>
-        </div>
+        <img src="https://images.unsplash.com/photo-1599561173705-0f3efb81da69?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MXwyMDg0MjR8MHwxfGFsbHwxfHx8fHx8fHwxNjA3MTE4NjUw&ixlib=rb-1.2.1&q=80&w=1080" alt="Discord Alarm" class="alarm-image">
     </section>
 
     <section id="calculator">
-        <h2>Raid Calculator</h2>
-        <p>Calcula los recursos y componentes necesarios para llevar a cabo una raid exitosa.</p>
+        <h2>Craft Calculator</h2>
+        <p>Calcula los recursos y componentes necesarios para crear explosivos y otros artículos.</p>
         <div id="calculator-container">
-            <label for="target-health">Salud del objetivo:</label>
-            <input type="number" id="target-health" placeholder="Salud del objetivo" />
-            <label for="explosive-type">Tipo de explosivo:</label>
-            <select id="explosive-type">
+            <label for="item">Selecciona un item:</label>
+            <select id="item">
                 <option value="satchel">Satchel Charge</option>
                 <option value="rocket">Rocket</option>
                 <option value="grenade">Grenade</option>
             </select>
+            <label for="quantity">Cantidad:</label>
+            <input type="number" id="quantity" placeholder="Cantidad" min="1" />
             <button id="calculate-button" class="button">Calcular</button>
             <p id="calculator-result"></p>
         </div>
-        <img src="https://i.imgur.com/VbYAs5U.png" alt="Rust Explosives" class="calc-image">
+        <img src="https://i.imgur.com/VbYAs5U.png" alt="Rust Crafting" class="calc-image">
     </section>
 
     <section id="contact">
@@ -103,4 +95,5 @@
         <p>&copy; 2024 EU Tiesos España. Todos los derechos reservados.</p>
     </footer>
 </body>
-</html>
+            </html>
+            
