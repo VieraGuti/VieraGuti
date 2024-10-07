@@ -4,33 +4,112 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>EU Tiesos España</title>
-    <link rel="stylesheet" href="estilos.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Russo+One&family=Permanent+Marker&display=swap" rel="stylesheet">
-    <script src="script.js" defer></script>
+    <link href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Russo One', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #1b1b1b;
+            color: #f2f2f2;
+            line-height: 1.6;
+        }
+        header {
+            background: #c30f0f;
+            padding: 20px;
+            text-align: center;
+        }
+        h1 {
+            margin: 0;
+            color: #f9c74f;
+        }
+        nav {
+            margin: 20px 0;
+        }
+        nav a {
+            color: #f9c74f;
+            margin: 0 15px;
+            text-decoration: none;
+            padding: 10px 15px;
+            background: #333;
+            border-radius: 5px;
+            transition: background 0.3s;
+        }
+        nav a:hover {
+            background: #444;
+        }
+        .container {
+            padding: 20px;
+        }
+        .server {
+            background: #333;
+            padding: 15px;
+            margin: 10px 0;
+            border-radius: 5px;
+        }
+        footer {
+            text-align: center;
+            padding: 10px;
+            background: #333;
+        }
+        h2 {
+            color: #f9c74f;
+        }
+        #calculator {
+            background: #333;
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 5px;
+        }
+        select, input[type="number"] {
+            padding: 10px;
+            margin: 10px 0;
+            width: 100%;
+            border: none;
+            border-radius: 5px;
+        }
+        #calculate-button {
+            background: #c30f0f;
+            color: #f9c74f;
+            border: none;
+            cursor: pointer;
+            padding: 10px;
+            border-radius: 5px;
+            transition: background 0.3s;
+        }
+        #calculate-button:hover {
+            background: #d41e1e;
+        }
+        #calculator-result {
+            background: #444;
+            padding: 10px;
+            border-radius: 5px;
+            margin-top: 10px;
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 5px;
+        }
+    </style>
 </head>
 <body>
-    <header>
-        <h1>¡Bienvenido a EU Tiesos España!</h1>
-        <nav>
-            <ul>
-                <li><a href="#server1">Servidor x100</a></li>
-                <li><a href="#server2">Servidor x2</a></li>
-                <li><a href="#alarma">Alarma Discord</a></li>
-                <li><a href="#calculator">Craft Calculator</a></li>
-                <li><a href="#contact">Contacto</a></li>
-                <li><a href="#politicas">Políticas</a></li>
-            </ul>
-        </nav>
-    </header>
-    
-    <section id="hero">
-        <h2>¡Aventura, Acción y Diversión!</h2>
-        <img src="https://images.unsplash.com/photo-1603327679999-4c0cb9e70d04?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MXwyMDg0MjR8MHwxfGFsbHwxfHx8fHx8fHwxNjA3MTE4NjUw&ixlib=rb-1.2.1&q=80&w=1080" alt="Rust Game" class="hero-image">
-    </section>
-    
-    <section id="server1">
+
+<header>
+    <h1>¡Bienvenido a EU Tiesos España!</h1>
+    <nav>
+        <a href="#server-x100">Servidor x100</a>
+        <a href="#server-x2">Servidor x2</a>
+        <a href="#discord-alarm">Alarma Discord</a>
+        <a href="#calculator">Craft Calculator</a>
+        <a href="#contact">Contacto</a>
+        <a href="#policies">Políticas</a>
+    </nav>
+</header>
+
+<div class="container">
+
+    <section id="server-x100" class="server">
         <h2>Servidor x100</h2>
         <p>Este servidor está diseñado para un PvP intenso y una experiencia de juego más fácil. ¡Ideal para los que buscan acción rápida!</p>
         <ul>
@@ -38,10 +117,9 @@
             <li>Eventos automáticos con cajas sorpresas</li>
             <li>Diviértete sin perder tiempo</li>
         </ul>
-        <img src="https://rust.game/assets/images/servers-x100.jpg" alt="Servidor x100" class="server-image">
     </section>
-    
-    <section id="server2">
+
+    <section id="server-x2" class="server">
         <h2>Servidor x2</h2>
         <p>Un desafío más auténtico que incluye hornos rápidos y kits cada hora, perfecto para aquellos que buscan una experiencia de juego más profunda.</p>
         <ul>
@@ -49,52 +127,69 @@
             <li>Eventos de cajas y recompensas</li>
             <li>Construye tu base y defiéndela</li>
         </ul>
-        <img src="https://rust.game/assets/images/servers-x2.jpg" alt="Servidor x2" class="server-image">
     </section>
-    
-    <section id="alarma">
+
+    <section id="discord-alarm" class="server">
         <h2>Alarma de Raid en Discord</h2>
         <p>¡Recibe una alarma en Discord cuando te "raidean"! No te pierdas la acción, mantente alerta y preparado.</p>
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/P5OQ103spK8" title="Alarma de Raid" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <img src="https://example.com/discord-alarm-image.jpg" alt="Alarma de Discord" />
     </section>
 
     <section id="calculator">
         <h2>Craft Calculator</h2>
         <p>Calcula los recursos y componentes necesarios para crear explosivos y otros artículos.</p>
-        <div id="calculator-container">
-            <label for="item">Selecciona un item:</label>
-            <select id="item">
-                <option value="satchel">Satchel Charge</option>
-                <option value="rocket">Rocket</option>
-                <option value="grenade">Grenade</option>
-                <option value="c4">C4</option>
-                <option value="explosive-bullet">Explosive Bullet</option>
-                <option value="landmine">Land Mine</option>
-                <option value="timed-explosive">Timed Explosive</option>
-            </select>
-            <label for="quantity">Cantidad:</label>
-            <input type="number" id="quantity" placeholder="Cantidad" min="1" />
-            <button id="calculate-button" class="button">Calcular</button>
-            <p id="calculator-result"></p>
-        </div>
-        <img src="https://i.imgur.com/Xp1VHK1.png" alt="Rust Crafting" class="calc-image">
+        <select id="item">
+            <option value="satchel">Satchel Charge</option>
+            <option value="rocket">Rocket</option>
+            <option value="grenade">Grenade</option>
+            <option value="c4">C4</option>
+        </select>
+        <input type="number" id="quantity" placeholder="Cantidad" min="1" value="1">
+        <button id="calculate-button">Calcular</button>
+        <div id="calculator-result"></div>
     </section>
 
     <section id="contact">
-        <h2>Contáctanos</h2>
+        <h2>Contacto</h2>
         <p>Únete a nuestro Discord para más información y para hablar con otros jugadores:</p>
-        <a href="https://discord.gg/yFrVfvNKpc" class="button">Únete al Discord</a>
+        <a href="https://discord.gg/tu-enlace" target="_blank">Únete al Discord</a>
         <p>¿Quieres VIP o Elite? Conoce nuestras opciones en Patreon:</p>
-        <a href="https://www.patreon.com/TiesosESP" class="button">Visita nuestro Patreon</a>
+        <a href="https://patreon.com/tu-enlace" target="_blank">Visita nuestro Patreon</a>
     </section>
 
-    <section id="politicas">
+    <section id="policies">
         <h2>Políticas del Servidor</h2>
         <p>La compra de VIP, Elite o TiesosCoins no te hace inmune a un baneo si se detectan trampas.</p>
     </section>
 
-    <footer>
-        <p>&copy; 2024 EU Tiesos España. Todos los derechos reservados.</p>
-    </footer>
+</div>
+
+<footer>
+    <p>© 2024 EU Tiesos España. Todos los derechos reservados.</p>
+</footer>
+
+<script>
+    // JavaScript para el Craft Calculator
+    const resources = {
+        satchel: { sulfur: 100, cloth: 20, explosive: 10 },
+        rocket: { sulfur: 200, explosive: 50, metal: 50 },
+        grenade: { sulfur: 30, explosive: 5, metal: 10 },
+        c4: { sulfur: 300, explosive: 10, metal: 10, cloth: 5 }
+    };
+
+    document.getElementById('calculate-button').addEventListener('click', () => {
+        const item = document.getElementById('item').value;
+        const quantity = parseInt(document.getElementById('quantity').value);
+        const cost = resources[item];
+        let result = `Para ${quantity} ${item} necesitas:\n`;
+        
+        for (const resource in cost) {
+            result += `${cost[resource] * quantity} ${resource}\n`;
+        }
+
+        document.getElementById('calculator-result').innerText = result;
+    });
+</script>
+
 </body>
 </html>
