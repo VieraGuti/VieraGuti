@@ -8,8 +8,9 @@ Whether it’s tweaking an interface or creating something from scratch to impro
 
 📦 I’ve built a Rust Console Edition Kit Builder, a tool to help servers owners organize and optimize their loadouts:
 
-👉 https://bot.ka0s.uk/vieras-kit-builder/
- [🖲️ Click to view image]([URL_DE_LA_IMAGEN](https://i.imgur.com/NguXNfX.png))
+👉 https://bot.ka0s.uk/vieras-kit-builder/ 
+[![Click to view image](https://i.imgur.com/NguXNfX.png)](https://i.imgur.com/NguXNfX.png)
+
 
 📚 Self-taught, community-driven, and always curious.
 This profile is a space for sharing what I build, break, fix, and learn along the way.
