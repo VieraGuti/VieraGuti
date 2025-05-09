@@ -7,6 +7,7 @@ My interests lie in scripting, UI adjustments, loadout planning, and finding cre
 Whether it’s tweaking an interface or creating something from scratch to improve the experience, I learn by experimenting and failing forward.
 
 📦 I’ve built a Rust Console Edition Kit Builder, a tool to help players organize and optimize their loadouts:
+
 👉 https://bot.ka0s.uk/vieras-kit-builder/
 
 📚 Self-taught, community-driven, and always curious.
